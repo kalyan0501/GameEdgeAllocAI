@@ -1,13 +1,3 @@
-/*
- * Offline NS-3 replay of the GameEdgeAllocAI Python allocation trace.
- * Compatible target: ns-3 3.45+ with wifi, internet, applications, flow-monitor.
- * Compile as scratch/gameedgeallocai-ns3.cc using ./ns3 run.
- *
- * The input bandwidth is implemented as APPLICATION-LEVEL offered-rate shaping,
- * not as guaranteed PHY airtime reservation or a coupled Stackelberg controller.
- * FlowMonitor provides measured wireless packet delivery and packet delay.
- * Python retains responsibility for the CPU/compute-time allocation.
- */
 #include "ns3/core-module.h"
 #include "ns3/network-module.h"
 #include "ns3/mobility-module.h"
