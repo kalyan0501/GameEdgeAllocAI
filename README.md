@@ -1,6 +1,6 @@
 # GameEdgeAllocAI: Complete Research Implementation
 
-**Title:** GameEdgeAllocAI: A Stackelberg Game-Based Resource Allocation Framework for Fair and Energy-Efficient Multi-User Mobile Edge Computing
+A Stackelberg Game-Based Resource Allocation Framework for Fair and Energy-Efficient Multi-User Mobile Edge Computing
 
 **Contents:** runnable Python MEC simulator; analytical best-response optimisation; original dynamic-pricing mode; capacity-clearing pricing extension; personalised fairness pricing; EWRE online demand learning; robust feedback filtering; fairness-target adaptation; DDPG and parameter-shared multi-agent DRL training/evaluation; six classical comparators; controlled ablations and sensitivities; statistics; 600-dpi figures; NS-3 Wi-Fi packet-level replay source; an automated test suite. All simulated results are generated from the supplied code and **no previously claimed journal result is hardcoded**.
 
@@ -61,28 +61,6 @@ python -m gameedgealloc.cli plot \
 The comprehensive `study.yaml` has 5 user counts, 4 loads, 10 independent seeds, 1,000 slots/seed, two independently trained DRL methods and nine algorithms. **It is a configurable experimental plan, not a claim that this entire grid has been executed.** Reduce the matrix for a quick run. Ten independent seeds are already specified in the study configuration.
 
 ## 3. Mathematical model and exact module mapping
-
-| Manuscript specification | Source file | Implementation |
-|---|---|---|
-| Eqs. (1)–(3d) | `models.py`, `simulator.py`, `workload.py` | Tasks, aggregate CPU/bandwidth bounds, latency, energy and optional queue state |
-| Eqs. (4), (18) | `models.py` | Latency/energy/cost user utility |
-| Eqs. (23a), (24a) | `follower.py` | CPU first-order root; closed-form bandwidth demand; optional hard deadline KKT dual |
-| Eqs. (21), (22), (34), (35) | `pricing.py`, `equilibrium.py` | Congestion-adjusted leader fixed point, damping and optional scarcity price |
-| Eqs. (6), (30), (30a) | `fairness.py` | Deadline-satisfaction Jain index, normalised deviation and personalised price |
-| Eqs. (38)–(41) | `online_learning.py`, `equilibrium.py` | EWRE, robust filtering, bisection warm start, adaptive fairness/step |
-| Eqs. (42)–(44) | `metrics.py` | Quantised-message overhead and estimated signalling latency |
-| Section 5.2 | `baselines.py`, `rl.py` | Six classical and two trained neural comparators |
-| Sections 5.3–5.12 (referenced but not fully supplied) | `experiments.py`, `statistics.py`, `plotting.py`, `ablations.py` | Configurable new comparisons, paired multi-seed evaluation, tests, sensitivity |
-
-### Units and non-arbitrary dimensional choices
-
-* `D`: **Mbit**, `b`: **MHz**. Therefore `D/(b*s)` is seconds.
-* `C`: **Gcycle** (10^9 cycles), `f`: **GHz**, so `C/f` is seconds.
-* `P`: W. `P*D/(b*s)` gives joules.
-* `zeta`: **J/(Gcycle·GHz²)**. The `dvfs_zeta=0.07` default is **an assumed simulation coefficient**, not a measured hardware switched-capacitance value.
-* Base prices are currency-like **utility units per GHz and MHz**, not externally calibrated market prices. The user utility weights are dimensionless simulation preferences with compatible weighting units.
-
-The manuscript leaves capacities, slot length, per-device distributions, communication rates and many RL hyperparameters unspecified in the supplied pages. Defaults in `models.py` and `workload.py` are **explicit, independently chosen simulation assumptions**. Edit them for empirical replication before manuscript claims.
 
 ### Model fidelity and limitations that must not be concealed
 
