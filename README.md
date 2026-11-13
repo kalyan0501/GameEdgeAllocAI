@@ -2,7 +2,7 @@
 
 A Stackelberg Game-Based Resource Allocation Framework for Fair and Energy-Efficient Multi-User Mobile Edge Computing
 
-**Contents:** runnable Python MEC simulator; analytical best-response optimisation; original dynamic-pricing mode; capacity-clearing pricing extension; personalised fairness pricing; EWRE online demand learning; robust feedback filtering; fairness-target adaptation; DDPG and parameter-shared multi-agent DRL training/evaluation; six classical comparators; controlled ablations and sensitivities; statistics; 600-dpi figures; NS-3 Wi-Fi packet-level replay source; an automated test suite.
+Runnable Python MEC simulator; analytical best-response optimisation; original dynamic-pricing mode; capacity-clearing pricing extension; personalised fairness pricing; EWRE online demand learning; robust feedback filtering; fairness-target adaptation; DDPG and parameter-shared multi-agent DRL training/evaluation; six classical comparators; controlled ablations and sensitivities; statistics; 600-dpi figures; NS-3 Wi-Fi packet-level replay source; an automated test suite.
 
 ## 1. Installation
 
