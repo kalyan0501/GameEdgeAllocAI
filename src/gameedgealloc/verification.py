@@ -1,9 +1,3 @@
-"""Independent numerical checks for analytical conditions in Sec. 4.9.
-
-The checks report observed finite-difference slopes/monotonicity and Hessian
-signs. They are numerical checks, not deductive proofs of equilibrium existence
-or of the paper's leader optimality assertions.
-"""
 from __future__ import annotations
 import argparse,json
 from pathlib import Path
