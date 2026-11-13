@@ -1,11 +1,3 @@
-"""Task model, physical equations, allocators' common IO and unit system.
-
-Internal units: D in Mbit, b in MHz, C in billion CPU cycles (Gcycle),
-f in GHz, deadlines and latency in seconds, transmission power in watts,
-energy in joules. Since Mbit/MHz = second and Gcycle/GHz = second, the
-manuscript's latency equations retain their exact form in these units.
-DVFS zeta is the numerical coefficient in J/(Gcycle*GHz**2).
-"""
 from __future__ import annotations
 from dataclasses import dataclass, field, replace
 from typing import Sequence
