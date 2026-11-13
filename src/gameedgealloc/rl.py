@@ -1,11 +1,3 @@
-"""Working PyTorch DDPG and parameter-shared multi-agent actor-critic comparators.
-
-DDPG: deterministic global actor + learned critic, replay, target networks.
-MADRL: shared per-agent stochastic policy + centralized value critic, shared
-cooperative reward and on-policy temporal-difference advantage (A2C style).
-These implement the manuscript's *classes of baselines*, not unpublished exact
-hyperparameter/architecture replicas of cited papers [4] and [35].
-"""
 from __future__ import annotations
 from dataclasses import dataclass
 from collections import deque
