@@ -1,13 +1,3 @@
-"""Stackelberg-inspired iterative pricing, exact follower responses and feedback.
-
-Two deliberately separate operating modes:
-  paper_fixedpoint: apply Eq.(34), capacity violations are reported, not hidden.
-  capacity_clearing: additionally impose scarcity-price floors to achieve a
-  feasible no-projection allocation in continuous ('soft') response mode.
-
-The second is an implementation extension and is NOT claimed to solve the
-manuscript's revenue-form leader argmax without further verification.
-"""
 from __future__ import annotations
 import time
 import numpy as np
