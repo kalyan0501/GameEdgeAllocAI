@@ -163,5 +163,3 @@ To inspect the continuous best-response Hessian signs, monotonicity, maximum fin
 python -m gameedgealloc.verification --users 20 --load 1.0 \
   --output results/equilibrium_numerical_check.json
 ```
-
-This **does not constitute an independent proof** of the manuscript's claims, especially for coupled personalised-fairness prices or discontinuous hard deadlines. The packet/compute queue simulator additionally records any backlog dropped by its configured numerical queue caps rather than discarding this workload silently.
