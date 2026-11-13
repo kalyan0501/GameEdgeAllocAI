@@ -1,0 +1,13 @@
+{
+  "n_users": 5,
+  "negative_hessian_diagonals_all": true,
+  "demand_monotone_decreasing": true,
+  "price_map_monotone_decreasing": true,
+  "max_cpu_price_elasticity": 0.335009814190555,
+  "elasticity_half_bound_respected": true,
+  "empirical_max_abs_price_slope": 0.04013880708597935,
+  "conservative_L_bound": 0.1967277269475495,
+  "slope_within_conservative_bound": true,
+  "global_sufficient_condition_L_below_one": true,
+  "warning": "Finite-difference audit for uniform-price/soft-response only; fairness coupling and hard deadlines are excluded."
+}

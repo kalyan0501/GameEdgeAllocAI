@@ -1,0 +1,5 @@
+method,n_users,load,seed,checkpoint,steps,last100_reward
+ddpg,8,0.8,42,results/smoke/checkpoints/ddpg_n8_load0.80_seed42.pt,90,-0.4506272399253343
+madrl,8,0.8,42,results/smoke/checkpoints/madrl_n8_load0.80_seed42.pt,90,-0.4440061211036703
+ddpg,8,0.8,123,results/smoke/checkpoints/ddpg_n8_load0.80_seed123.pt,90,-0.46065790002373874
+madrl,8,0.8,123,results/smoke/checkpoints/madrl_n8_load0.80_seed123.pt,90,-0.4421826221072388

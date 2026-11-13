@@ -1,0 +1,34 @@
+system:
+  cpu_capacity_ghz: 24.0
+  bandwidth_capacity_mhz: 35.0
+  slot_seconds: 1.0
+  base_cpu_price: 0.11
+  base_bandwidth_price: 0.11
+  kappa_cpu: 0.5
+  kappa_bw: 0.5
+  eta_cpu: 0.3
+  eta_bw: 0.3
+  initial_mu: 0.3
+  target_jain: 0.90
+  forgetting: 0.20
+  mu_max: 1.5
+  adaptive_fairness: true
+  adaptive_step: true
+  enable_learning: true
+  enable_filtering: true
+  enable_warm_start: true
+  capacity_clearing: true
+  deadline_mode: soft
+  queue_enabled: true
+experiment:
+  user_counts: [10, 25, 50, 100, 200]
+  loads: [0.5, 1.0, 1.5, 2.0]
+  seeds: [42, 123, 2024, 2025, 3407, 587, 914, 1201, 7001, 8888]
+  slots: 1000
+  warmup: 100
+  methods: [gameedgealloc, uniform_stackelberg, equal, proportional, greedy, selfish, centralized, ddpg, madrl]
+  rl_train_steps: 5000
+  save_trace: false
+  save_detailed: false
+workload:
+  channel_mode: varying

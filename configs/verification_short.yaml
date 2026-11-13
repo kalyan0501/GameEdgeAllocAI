@@ -1,0 +1,9 @@
+system:
+  feedback_corruption: 0.15
+  queue_enabled: true
+experiment:
+  users: 10
+  load: 1.2
+  seeds: [42, 123]
+  slots: 12
+  warmup: 2

@@ -1,0 +1,69 @@
+{
+  "created_utc": "2026-11-13T12:06:50.150597+00:00",
+  "config": {
+    "system": {
+      "cpu_capacity_ghz": 24.0,
+      "bandwidth_capacity_mhz": 35.0,
+      "enable_learning": true,
+      "capacity_clearing": true,
+      "deadline_mode": "soft",
+      "queue_enabled": true
+    },
+    "experiment": {
+      "user_counts": [
+        8
+      ],
+      "loads": [
+        0.8
+      ],
+      "seeds": [
+        42,
+        123
+      ],
+      "slots": 12,
+      "warmup": 2,
+      "methods": [
+        "gameedgealloc",
+        "uniform_stackelberg",
+        "equal",
+        "proportional",
+        "greedy",
+        "selfish",
+        "centralized",
+        "ddpg",
+        "madrl"
+      ],
+      "rl_train_steps": 90,
+      "save_trace": true,
+      "save_detailed": true
+    },
+    "workload": {
+      "channel_mode": "varying"
+    }
+  },
+  "software": {
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "torch": "2.10.0+cpu"
+  },
+  "methods": [
+    "gameedgealloc",
+    "uniform_stackelberg",
+    "equal",
+    "proportional",
+    "greedy",
+    "selfish",
+    "centralized",
+    "ddpg",
+    "madrl"
+  ],
+  "traces_are_paired_by_seed": true,
+  "warmup_slots_excluded_from_summary": 2,
+  "figures": [
+    "figures/main_metrics_users_8.png",
+    "figures/convergence_signalling_users_8.png"
+  ],
+  "interpretation": "Simulation outcomes; no manuscript performance claims are assumed."
+}

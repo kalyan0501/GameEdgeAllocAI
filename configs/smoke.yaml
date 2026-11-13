@@ -1,0 +1,19 @@
+system:
+  cpu_capacity_ghz: 24.0
+  bandwidth_capacity_mhz: 35.0
+  enable_learning: true
+  capacity_clearing: true
+  deadline_mode: soft
+  queue_enabled: true
+experiment:
+  user_counts: [8]
+  loads: [0.8]
+  seeds: [42, 123]
+  slots: 12
+  warmup: 2
+  methods: [gameedgealloc, uniform_stackelberg, equal, proportional, greedy, selfish, centralized, ddpg, madrl]
+  rl_train_steps: 90
+  save_trace: true
+  save_detailed: true
+workload:
+  channel_mode: varying

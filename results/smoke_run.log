@@ -1,0 +1,27 @@
+      n8_load0.80_seed42 gameedgealloc         latency=0.6023 fairness=0.9236 capacity=1.000
+      n8_load0.80_seed42 uniform_stackelberg   latency=0.6016 fairness=0.9174 capacity=1.000
+      n8_load0.80_seed42 equal                 latency=0.1304 fairness=0.8438 capacity=1.000
+      n8_load0.80_seed42 proportional          latency=0.1556 fairness=1.0000 capacity=1.000
+      n8_load0.80_seed42 greedy                latency=0.1285 fairness=0.8620 capacity=1.000
+      n8_load0.80_seed42 selfish               latency=0.4877 fairness=0.9057 capacity=1.000
+      n8_load0.80_seed42 centralized           latency=0.3869 fairness=0.8877 capacity=1.000
+      n8_load0.80_seed42 ddpg                  latency=0.2071 fairness=0.7371 capacity=1.000
+      n8_load0.80_seed42 madrl                 latency=0.1298 fairness=0.8448 capacity=1.000
+     n8_load0.80_seed123 gameedgealloc         latency=0.6766 fairness=0.9488 capacity=1.000
+     n8_load0.80_seed123 uniform_stackelberg   latency=0.6779 fairness=0.9470 capacity=1.000
+     n8_load0.80_seed123 equal                 latency=0.1187 fairness=0.8693 capacity=1.000
+     n8_load0.80_seed123 proportional          latency=0.1329 fairness=1.0000 capacity=1.000
+     n8_load0.80_seed123 greedy                latency=0.1172 fairness=0.8818 capacity=1.000
+     n8_load0.80_seed123 selfish               latency=0.5387 fairness=0.9327 capacity=1.000
+     n8_load0.80_seed123 centralized           latency=0.4111 fairness=0.9044 capacity=1.000
+     n8_load0.80_seed123 ddpg                  latency=0.1528 fairness=0.7755 capacity=1.000
+     n8_load0.80_seed123 madrl                 latency=0.1183 fairness=0.8736 capacity=1.000
+{
+  "results_dir": "results/smoke",
+  "rows": 216,
+  "seed_summaries": 18,
+  "figures": [
+    "results/smoke/figures/main_metrics_users_8.png",
+    "results/smoke/figures/convergence_signalling_users_8.png"
+  ]
+}

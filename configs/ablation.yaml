@@ -1,0 +1,12 @@
+# Use python -m gameedgealloc.ablations --config configs/ablation.yaml
+system:
+  capacity_clearing: true
+  deadline_mode: soft
+  queue_enabled: true
+  feedback_corruption: 0.15
+experiment:
+  users: 25
+  load: 1.5
+  seeds: [42, 123, 2024, 2025, 3407]
+  slots: 250
+  warmup: 30
