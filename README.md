@@ -145,21 +145,3 @@ configs/            # smoke, full study, ablation presets
 tests/              # mathematical, integration and RL verification
 ```
 
-## 7. Optional NS-3 network-level validation
-
-Please see `simulation/ns3/README.md` for commands. ns-3 must be installed independently (it is not provided as a pip package in this ZIP). The C++ source uses ns-3 tutorial Wi-Fi, UDP OnOff, PacketSink and FlowMonitor primitives. It was **not compiled in the packaging environment**, which does not include ns-3 libraries. Do not label network-level results as completed until it is compiled and run on a working ns-3 installation.
-
-Official NS-3 tutorial: https://www2.nsnam.org/docs/tutorial/singlehtml/index.html
-
----
-
-This is a complete executable **research reference implementation** with an optional NS-3 source integration. It is not a claim of exact numerical reproduction of the manuscript, nor a proof of all the paper's disputed game-theoretic propositions. Any full SCI reproducibility claim must distinguish verified Python outputs, independently executed NS-3 outputs, and theoretical results that still require proof.
-
-### Numerical theorem audit
-
-To inspect the continuous best-response Hessian signs, monotonicity, maximum finite-difference elasticity, and the conservative contraction bound in Section 4.9, run:
-
-```bash
-python -m gameedgealloc.verification --users 20 --load 1.0 \
-  --output results/equilibrium_numerical_check.json
-```
